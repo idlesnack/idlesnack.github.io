@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idle Snack · Assistance</title>
+<meta name="description" content="Idle Snack, un jeu idle cosy pour iPhone : fais grandir ton petit food truck jusqu'au palace. Aide et contact.">
+<link rel="icon" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<style>
+  /* La police du jeu, servie depuis ce site (pas de Google Fonts : ce serait une donnée de plus envoyée à Google) */
+  @font-face { font-family: "Fredoka"; src: url("Fredoka.ttf") format("truetype"); font-weight: 300 700; font-display: swap; }
+  :root {
+    --peche: #FCE6D2; --carte: #FFF8EE; --chocolat: #5C3A28; --doux: #8A6A55; --corail: #F2856B;
+    --corail-fonce: #C25A43; --bord: #EBD9C3; --menthe: #DDF2E6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --peche: #2A1E18; --carte: #352720; --chocolat: #F6E7D8; --doux: #D2B9A4; --corail: #F59A84;
+      --corail-fonce: #F7B19F; --bord: #4A372D; --menthe: #23392E;
+    }
+  }
+  :root[data-theme="dark"] {
+    --peche: #2A1E18; --carte: #352720; --chocolat: #F6E7D8; --doux: #D2B9A4; --corail: #F59A84;
+    --corail-fonce: #F7B19F; --bord: #4A372D; --menthe: #23392E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--peche); color: var(--chocolat);
+    font-family: "Fredoka", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400; font-size: 18px; line-height: 1.55;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
+  header { display: flex; align-items: center; gap: 22px; margin-bottom: 24px; }
+  header img { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 8px 18px rgba(92, 58, 40, 0.18); flex: none; }
+  h1 { font-weight: 600; font-size: 2.3rem; line-height: 1.1; margin: 0 0 6px; }
+  .sous-titre { color: var(--doux); margin: 0; font-weight: 500; }
+  section { background: var(--carte); border: 2px solid var(--bord); border-radius: 24px; padding: 20px 22px; margin: 16px 0; }
+  h2 { font-weight: 600; font-size: 1.3rem; margin: 0 0 8px; }
+  h3 { font-weight: 600; font-size: 1.05rem; margin: 16px 0 4px; }
+  h3:first-of-type { margin-top: 4px; }
+  p { margin: 0 0 10px; }
+  p:last-child { margin-bottom: 0; }
+  strong { font-weight: 600; }
+  a { color: var(--corail-fonce); font-weight: 500; text-underline-offset: 3px; }
+  .contact { background: var(--menthe); border-color: transparent; }
+  .adresse { display: inline-block; margin-top: 4px; padding: 8px 18px; border-radius: 999px; background: var(--carte);
+             border: 2px solid var(--bord); font-weight: 600; text-decoration: none; }
+  footer { color: var(--doux); font-size: 0.9rem; text-align: center; margin-top: 28px; }
+  footer a { color: var(--doux); }
+  @media (max-width: 480px) {
+    body { font-size: 17px; } h1 { font-size: 1.9rem; } section { padding: 16px 16px; }
+    header { gap: 16px; } header img { width: 84px; height: 84px; border-radius: 19px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icone.png" alt="L'icône d'Idle Snack : un food truck sur son îlot d'herbe">
+    <div>
+      <h1>Idle Snack</h1>
+      <p class="sous-titre">Du food truck au palace</p>
+    </div>
+  </header>
+
+  <section>
+    <p>Idle Snack est un petit jeu de restaurant pour iPhone. Tu commences avec un food truck et quelques frites, tu
+      agrandis ta cuisine, tes tables et ton service, tu embauches un manager… puis tu ouvres un bistrot, une brasserie
+      et enfin un palace. Tes restaurants continuent de tourner même quand tu ne joues pas.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Besoin d'aide ?</h2>
+    <p>Écris-nous, nous répondons dès que possible. Dis-nous le modèle de ton iPhone et ce qui se passe.</p>
+    <a class="adresse" href="mailto:idlesnack.contact@gmail.com">idlesnack.contact@gmail.com</a>
+  </section>
+
+  <section>
+    <h2>Questions fréquentes</h2>
+    <h3>Où est enregistrée ma partie ?</h3>
+    <p>Sur ton téléphone. Elle s'enregistre toute seule pendant que tu joues, sans compte à créer. Attention : si tu
+      supprimes le jeu, ta partie est effacée avec lui.</p>
+    <h3>Le jeu est-il gratuit ?</h3>
+    <p>Oui, entièrement, et il n'y a aucun achat dans le jeu.</p>
+    <h3>Les publicités sont-elles obligatoires ?</h3>
+    <p>Non. Le jeu propose seulement des vidéos facultatives, par exemple pour doubler tes gains. Tu peux jouer sans
+      jamais en regarder.</p>
+    <h3>Que se passe-t-il quand je ne joue pas ?</h3>
+    <p>Tes managers continuent de cuisiner pendant ton absence, jusqu'à 2 heures. À ton retour, le jeu te montre ce
+      qu'ils ont gagné.</p>
+    <h3>Comment couper la musique, les sons ou les vibrations ?</h3>
+    <p>Touche la roue dentée, en haut à droite de l'écran du jeu.</p>
+  </section>
+
+  <section>
+    <h2>Tes données</h2>
+    <p>Nous ne recevons pas les données de ta partie. Tout est expliqué dans la
+      <a href="confidentialite.html">politique de confidentialité</a>.</p>
+  </section>
+
+  <footer>Idle Snack · un petit jeu de restaurant fait en France · <a href="confidentialite.html">Confidentialité</a></footer>
+</main>
+</body>
+</html>
